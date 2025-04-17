@@ -1,3 +1,5 @@
+//Code readabilty should be high. Your codes should be easily readable, future proof and well optimized.
+
 //Variables are containers to store data. Some words are reserved in JS, which cannot be used as a variable.
 
 var name = "Rehan"; //var can be re-declared & updated(Global scope). Never use var to create variables because it can be re-declared and it causes alot of trouble.
@@ -43,4 +45,8 @@ console.log(hisPower);
 let noValue;
 console.log(noValue);
 //It will give undefined value because no value was assigned while creating that variable but you can add the value later.
+noValue = "This is the value";
+console.log(noValue);
+
+
 
