@@ -36,3 +36,5 @@ console.log(userTwo);
 userTwo.userId = 200; //Assigned a new value.
 console.log(userTwo.userId); //Output: 200-New value that we've assigned earlier.
 console.log(userOne.userId);//Output: 200 cz original referance value was changed in heap memory.
+
+
