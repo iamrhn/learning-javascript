@@ -7,7 +7,7 @@ Primitive
 4. Symbol - A unique and immutable primitive used as obj.
 5. Undefined - Undefined value.
 6. Null - No value or empty.
-7. BigINT - Used to represent integers larger than numbers.
+7. BigINT - Used to represent integers larger than numbers. 
 
 Non-Primitive
 1.Object
@@ -18,6 +18,7 @@ let fullName = "Rehan"; //String
 let rollNo = 7; //Number
 let temprature = null; //null(Object type)
 let loggedIn = false; //boolean
+let bigNumber = 123213761267318214n //Adding "n" after big number will treat the datatype as bigInt
 
 console.log(fullName);
 console.log(rollNo);
@@ -32,6 +33,11 @@ console.log(typeof "Rehan");
 console.log(typeof temprature);
 console.log(typeof loggedIn);
 console.log(typeof undefined);
+
+console.log(typeof bigNumber);
+
+
+
 
 
 
