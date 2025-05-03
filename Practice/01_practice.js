@@ -1,123 +1,68 @@
-//1. String Concatenation: Write a program that concatenates your first name and last name into a full name and prints it.
+//Practice Questions
 
-let firstName = "Rehan";
-let lastName = " Shaikh";
-const fullName = firstName + lastName;
-console.log(fullName);
+// -Declare a variable name and assign your name to it as a string. Then print it.
+//let name = "Rehan Shaikh";
+//console.log(name);
 
-//2. Data Types: Write a program that checks the type of a variable holding your age and prints it.
+// -Create a variable age and assign your age to it as a number.
+const age = 26;
+console.log(age);
 
-let age = 26;
-(console.log)(typeof age);
+// -What data type is true? Declare a variable isStudent and assign it that value.
+let isStudent = true;
+console.log(typeof isStudent);
 
-//3. Comparison Operators: Write a program that checks if two numbers are equal or not, and prints the result as true or false.
+// -Change the value of a variable x from a number to a string. What happens?
+let x = 100;
+x = String(x);
+console.log(x);
+console.log(typeof x);
 
-let number1 = 100;
-let number2 = 90;
-console.log(number1 == number2);
+// -Declare a constant PI with value 3.14. Try changing it. What error do you get?
+const PI = 3.14;
+//PI = 5;
+//console.log(PI);  //CONST can't be redecalred or updated.
 
+/* -Create two variables a = 10 and b = 3. Calculate and print:
+a + b
+a - b
+a * b
+a / b
+a % b*
+a ** b*/
+let a = 10;
+let b =3;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+console.log(a**b);
 
-//4. Logical Operators: Write a program that checks if a number is both greater than 10 and less than 20 using logical operators.
+/* -Write code to convert temperature from Celsius to Fahrenheit.
+Formula: F = C * 9/5 + 32*/
+let puneTempCel =  24;
+let tempratureConverter = puneTempCel * 9/5
+let puneTempFah  = tempratureConverter + 32;
+console.log(puneTempFah);
 
-let isNumber = 12;
-console.log(isNumber > 11 && isNumber < 20);
+//-Write a function greet(name) that prints "Hello, [name]!".
+let greet = "Rehan";
+if(greet == "Rehan") {
+    console.log("Hello, Rehan!");
+} 
 
-/*5. If-Else Statement: Write a program that checks if a number is even or odd.
-Print "Even" if the number is even, and "Odd" if it’s not.*/
+// -Write a function add(x, y) that returns the sum of two numbers.
+let add = [10, 10]
+if (add === 10, 10){
+    console.log(10 + 10);
+} //FAILED- I NEED TO LEARN TO AGAIN.
 
-let aNumber = 20;
-if(aNumber % 2 === 0){
-    console.log("Even");
-}
-else{
-    console.log("Odd");
-}
-
-/*6. String Length and Comparison:
-Write a program that compares the length of two strings and prints which one is longer.
-If they’re equal in length, print "Both strings are equal in length".*/
-
-let stringLenght = "JavaScript";
-let stringLenght2 = "Python";
-if(stringLenght.length > stringLenght2.length){
-    console.log(stringLenght + " is longer");
-}else if(stringLenght.length < stringLenght2.length){
-    console.log(stringLenght2 + " is longer");
-} else{
-    console.log("Both strings are equal in lenght")
-}
-
-/*7. Type Coercion Test
-Try this challenge:
-Write a program that adds a number and a string, then:
-Print the result
-Print the type of the result using typeof*/
-
-const test = 3 + " is myName";
-console.log(test);
-console.log(typeof test);
-
-/*8. Truthy and Falsy Check:
-Write a program that checks if a variable is truthy or falsy using an if statement.*/
-
-let isPresent = "0";
-if(isPresent){
-    console.log("Truthy");
-}
-else {
-    console.log("Falsy");
-}
-
-//9. Memory Type Challenge — Reference vs Value
-//Try this code:
-
-let obj1 = { name: "Rehan" };
-let obj2 = obj1;
-
-obj2.name = "Shaikh";
-
-console.log(obj1);
-console.log(obj2);
-
-/*Answer: cz obj1 and obj2 are objects, which means non-primitive datatypes and non-primitive datatpes uses heap memory 
-not stack memory and heap meemory changes refrence not copy of value*/
-
-/*10. Loose vs Strict Comparison
-Write a program that compares a number and a string using:*/
-
-let mouse = 100;
-let keyboard = "100";
-console.log(mouse == keyboard);
-console.log(mouse === keyboard);
-
-//11. Guess the Output
-//What will be the output of this:
-let result = "5" - 2;
-console.log(result);
-console.log(typeof result);
-
-//Answer: i think "5" will be converted into number so 5-2 will be 3 and datatype will be number 
-
-//Challenge 12 – Let’s reverse it:
-//let result = "5" + 2;
-//console.log(result);
-//console.log(typeof result);
-
-//Answer: Output will be 52 cz + will add 2 after 5 and datatype will be string.
-
-/*13. Working with Arrays:
-Create an array of numbers: [5, 10, 15, 20]
-Use the indexing to modify the array by:
-Changing the first value to 30
-Removing the last value manually
-Print the array at each step.*/
-
-let anArray = [5, 10, 15, 20];
-console.log(anArray.charAt5);
-
-
-
-
+//  -Write a function isPositive(n) that returns true if n is greater than 0, otherwise false.
+let n =  1;
+function isPositive(n > 1) {
+    console.log("true")
+} //FAILED- I NEED TO LEARN TO AGAIN.
 
 
 
