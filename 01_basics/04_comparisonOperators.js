@@ -1,4 +1,15 @@
 "use strict";
+
+//Assignment Operator - They are used to assign values.
+
+let value = 10;
+value += 8; //18
+value -= 5; //5
+value %= 3; //1
+value *= 2; //20
+value **= 2;
+console.log("value is now =", value)
+
 //Comparison Operators - They are used to compare to values.
 //Equal to ==
 //Not equal to !=
@@ -44,6 +55,7 @@ console.log([check, check1, check3, check4, check5, check6, check7]);
 
 //Note:- Always try to compare same datatypes and keep things clean.
 //Equality check(==, ===) and comparison operators works differently.
+
 
 
 

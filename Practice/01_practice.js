@@ -1,71 +1,47 @@
-//Practice Questions
+// //Declaring an object.
+// const student = {
+//     isActive : true,
+//     rollNo : 100,
+//     emailId : "iamrhn@google.com",
+// }
 
-// -Declare a variable name and assign your name to it as a string. Then print it.
-//let name = "Rehan Shaikh";
-//console.log(name);
+// console.log(student);
 
-// -Create a variable age and assign your age to it as a number.
-const age = 26;
-console.log(age);
+// student["isActive"] = false  //Change value in an object.
+// console.log(student);
+// student['occupation'] = "Developer" //Add a new ray in object.
+// console.log(student);
 
-// -What data type is true? Declare a variable isStudent and assign it that value.
-let isStudent = true;
-console.log(typeof isStudent);
+// // let name = "iamrHn";
+// // let value = 7114;
+// // console.log(name+value);
 
-// -Change the value of a variable x from a number to a string. What happens?
-let x = 100;
-x = String(x);
-console.log(x);
-console.log(typeof x);
+// // console.log(typeof  student); //object
+// // console.log(typeof (name+value)); //string
 
-// -Declare a constant PI with value 3.14. Try changing it. What error do you get?
-const PI = 3.14;
-//PI = 5;
-//console.log(PI);  //CONST can't be redecalred or updated.
+// //const fullName = 100;
+// //fullName = 200;
+// //console.log(fullName) //const can't be redeclared or updated.
 
-/* -Create two variables a = 10 and b = 3. Calculate and print:
-a + b
-a - b
-a * b
-a / b
-a % b*
-a ** b*/
-let a = 10;
-let b =3;
-console.log(a+b);
-console.log(a-b);
-console.log(a*b);
-console.log(a/b);
-console.log(a%b);
-console.log(a**b);
+// const dictionary = {
+//     receive : "to get or accept something that somebody sends or gives to you",
+//     referendum : "an occasion when all the people of a country can vote on a particular political question",
+//     resilient : "strong enough to deal with illness, a shock, change, etc.",
 
-/* -Write code to convert temperature from Celsius to Fahrenheit.
-Formula: F = C * 9/5 + 32*/
-let puneTempCel =  24;
-let tempratureConverter = puneTempCel * 9/5
-let puneTempFah  = tempratureConverter + 32;
-console.log(puneTempFah);
+// }
 
-//-Write a function greet(name) that prints "Hello, [name]!".
-let greet = "Rehan";
-if(greet == "Rehan") {
-    console.log("Hello, Rehan!");
-} 
+// console.log(dictionary['receive'])
 
-// -Write a function add(x, y) that returns the sum of two numbers.
-let add = [10, 10]
-if (add === 10, 10){
-    console.log(10 + 10);
-} //FAILED- I NEED TO LEARN TO AGAIN.
+// a = 10;
+// b = 90;
+// //console.log("a + b =", a + b);
+// console.log(++a)
+// console.log(a++)
+// console.log(--a)
+// console.log(a--)
+// console.log(a)
+// console.log(a--)
 
-//  -Write a function isPositive(n) that returns true if n is greater than 0, otherwise false.
-let n =  1;
-function isPositive(n > 1) {
-    console.log("true")
-} //FAILED- I NEED TO LEARN TO AGAIN.
-
-
-
-
-
-
+let a =  8;
+a -= 10;
+console.log(a)
