@@ -42,6 +42,50 @@
 // console.log(a)
 // console.log(a--)
 
-let a =  8;
-a -= 10;
-console.log(a)
+// let value1 = 10;
+// let value2 = "10";
+// console.log('value1 is equal to value2 =', value1 == value2);//Equal to
+// console.log('value1 is not equal to value2 =', value1 != value2);//Not equal to
+// console.log('value1 is equal to value2 =', value1 === value2);//Equal to &  check
+// console.log('value1 is not equal to value2 =', value1 !== value2);//Not equal to & check
+
+// let x = 10;
+// let y = 5;
+// console.log(('Logical and'), x = 10 && x > y); //Only if cond1 and cond2 true then output will be true otherwise false.
+// console.log(('Logical or'), x == 10 || x < y); //Even if one cond is true then output will be true.
+// console.log(('Logical not'), !false) //If true then false and if false then output will be true.
+
+// let age = prompt('Please enter your age below:');
+// if (age >= 18){
+//     alert('You can vote!')
+// } else {
+//     alert('You cannot vote!')
+// }
+
+
+const stock = "Socks";
+switch(stock) {
+    case "T-shirt":
+        console.log('T-shirts starting from Rs.499/-')
+        break;
+    case "Jeans":
+        console.log('Jeans starting from Rs.999/-')
+        break;
+    case "Socks":
+        console.log('Socks starting from Rs.199/-')
+        break;
+}
+
+let x = '10';
+console.log(typeof x)
+x = Number(x);
+console.log(typeof x);
+
+
+
+
+
+
+
+
+
