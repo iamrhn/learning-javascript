@@ -1,101 +1,120 @@
-// //Practice Questions
+/*- Primitive Data Types & typeof
+- What are the primitive data types in JavaScript?
+- Write a code snippet that creates a variable for each primitive data type and uses the typeof operator to log its type.*/
 
-// // -Declare a variable name and assign your name to it as a string. Then print it.
-// //let name = "Rehan Shaikh";
-// //console.log(name);
+// Answer:
 
-// // -Create a variable age and assign your age to it as a number.
-// const age = 26;
-// console.log(age);
+//There are two types of data types Primitive & Non-Primitive
+//Primitive: String, Number, Boolean, Null, Undefined, Symbol, BigInt
+//Non-Primitive: Object, Arrays, Function
 
-// // -What data type is true? Declare a variable isStudent and assign it that value.
-// let isStudent = true;
-// console.log(typeof isStudent);
+let isString = "Hello, I'm Rehan Shaikh!";
+let isNumber = 1234567890;
+let isBoolean = true; //true or false
+let isUndefined = undefined;
+let isNull = null;
+let isBigInt = 1234567890n;
+const isObject = {
+    name: 'Rehan Shaikh',
+    emailId: 'rhn7115@google.com',
+    isStudent: true,
+}
+const isArray = [100, 200, 300 , 400, 500];
+const isfunction = function(){};
 
-// // -Change the value of a variable x from a number to a string. What happens?
-// let x = 100;
-// x = String(x);
-// console.log(x);
-// console.log(typeof x);
+console.log(typeof isString);
+console.log(typeof isNumber);
+console.log(typeof isBoolean);
+console.log(typeof isUndefined);
+console.log(typeof isNull);
+console.log(typeof isBigInt);
+console.log(typeof isArray);
+console.log(typeof isfunction);
 
-// // -Declare a constant PI with value 3.14. Try changing it. What error do you get?
-// const PI = 3.14;
-// //PI = 5;
-// //console.log(PI);  //CONST can't be redecalred or updated.
+/* Null vs. Undefined
+- Explain the differences between null and undefined in JavaScript.
+- What are the outputs of typeof null and typeof undefined? Why might they differ?
+- Write a code snippet that demonstrates both null and undefined in action.*/
 
-// /* -Create two variables a = 10 and b = 3. Calculate and print:
-// a + b
-// a - b
-// a * b
-// a / b
-// a % b*
-// a ** b*/
-// let a = 10;
-// let b =3;
-// console.log(a+b);
-// console.log(a-b);
-// console.log(a*b);
-// console.log(a/b);
-// console.log(a%b);
-// console.log(a**b);
+//Answer: 
+// -Undefined is left empty intentionally but there's no value in null.
+// -Typeof undefined will be undefined while typeof null returns an object(which is a quirk in JS).
 
-// /* -Write code to convert temperature from Celsius to Fahrenheit.
-// Formula: F = C * 9/5 + 32*/
-// let puneTempCel =  24;
-// let tempratureConverter = puneTempCel * 9/5
-// let puneTempFah  = tempratureConverter + 32;
-// console.log(puneTempFah);
+let myName = undefined; //Undefined
+let myName1; //Undefined
+myName = "The Ghost of Uchiha";
+let temperature = null;
 
-// //-Write a function greet(name) that prints "Hello, [name]!".
-// let greet = "Rehan";
-// if(greet == "Rehan") {
-//     console.log("Hello, Rehan!");
-// } 
+console.log(typeof myName);
+console.log(typeof myName1);
+console.log(typeof temperature);
 
-// // -Write a function add(x, y) that returns the sum of two numbers.
-// let add = [10, 10]
-// if (add === 10, 10){
-//     console.log(10 + 10);
-// } //FAILED- I NEED TO LEARN TO AGAIN.
+/*- What is the difference between the == (equality) operator and the === (strict equality) operator in JavaScript?
+- Predict the output of the following code and explain why:
+let a = 5;
+let b = "5";
+console.log(a == b);   // ?
+console.log(a === b);  // ?
+console.log(true == 1);  // ?
+console.log(true === 1); // ? */
 
-// //  -Write a function isPositive(n) that returns true if n is greater than 0, otherwise false.
-// let n =  1;
-// function isPositive(n > 1) {
-//     console.log("true")
-// } //FAILED- I NEED TO LEARN TO AGAIN.
+//Answer:
+// '==' only compared the value but '===' checks for data type+value.
 
-// -Use logical operators to find wether the age of a person lies between 10 and 20?
+let a = 5; //5-a Number data type.
+let b = "5"; //5-a string data type.
+console.log(a == b); //true
+console.log(a === b); //false
+console.log(true == 1); //true
+console.log(true === 1); //false
 
-// let age = 12;
-// console.log(age >= 10 && age <= 20);
+/*Write a code snippet where == and === produce different results for non-number comparisons. Try using values like:
+- null vs undefined
+- Boolean values (true and false)
+- Empty string ("") vs false
+- Any other JavaScript quirk you find interesting
+Here’s an example to get you thinking:
+console.log(null == undefined);  
+console.log(null === undefined); 
+console.log("" == false);  
+console.log("" === false); */
 
-// let age = prompt('Whats your age?');
-// if(age >= 10 && age <= 20){
-//     alert('Your age is between 10 and 20!');
-// } else{
-//     alert('Your age is not between 10 and 20!');
-// }
+//Answer:
+let num1 = 10;
+let num2 = "10";
+let num3 = undefined;
+let num4 = null;
+let num5 = true;
+let num6 = false;;
 
-// -Demonstrate the use case of switch-case statment.
+console.log(num1 == num2); 
+console.log(num1 === num2); 
+console.log(num1 == num5); 
+console.log(num1 === num6); 
+console.log(num4 == num6); 
+console.log(num4 == undefined);
 
-const fruit = "Banana";
-switch(fruit){
-    case 'Mango':
-        console.log("1KG Mango costs around Rs.200/-")
-        break;
-        case "Grapes":
-            console.log('1Kg of Grapes costs around Rs.100/-')
-            break;
-            default:
-            console.log('This item is not available at the moment!')
-} 
+/*Write a function that checks if a number is positive, negative, or zero using only variables, conditional statements, 
+and operators (no return). Instead of returning a value, use console.log() to print the result.*/
 
-//  -Write a Javascript program to find wether a number is divisible by 2 and 3.
-let num = 12
-if(num % 2 == 0 && num % 3 == 0){
-    console.log("Your number is divisible by 2");
-} else{
-    console.log("Your number is not divisble by 2");
+//Answer 1
+const sum = 0;
+if(sum > 0){
+    console.log('sum is a positive number')
+} else if(sum < 0){
+    console.log('sum is a negative number')
+}else {
+    console.log('sum is zero')
+}
+
+//Answer2
+const sum = prompt('Please enter the number!')
+if(sum > 0){
+    alert('sum is a psotive number')
+}else if (sum < 0){
+    alert('sum is a negative number')
+}else {
+    alert('sum is zero')
 }
 
 
