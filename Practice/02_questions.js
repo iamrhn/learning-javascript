@@ -148,6 +148,56 @@ switch(dayNumber){
                                 console.log('Invalid day')
                 }
 
-                
-                
 
+const getSeason = 12;
+switch(getSeason){
+    case 1:
+    case 2:
+    case 3:
+    console.log('Winter');
+    break;
+    case 4:
+    case 5:
+    case 6:
+    console.log('Spring');
+    break;
+    case 7:
+    case 8:
+    case 9:
+    console.log('Summer');
+    break;
+    case 10:
+    case 11:
+    case 12:
+    console.log('Fall');
+    break;
+    default:
+    console.log('Invalid season')
+}                
+
+/*Write a function getGrade(score) that takes a score 
+(a number from 0 to 100) and returns a letter grade based on the following conditions:*/
+
+let getGrade = 49;
+getGrade = Number(getGrade);
+if(getGrade >= 90 && getGrade <= 100){
+    console.log('Grade A')}
+    else if(getGrade >= 80 && getGrade <= 89){
+    console.log('Grade B')}
+else if(getGrade >= 70 && getGrade <= 79){
+    console.log('Grade C')}
+else if(getGrade >= 60 && getGrade <= 69){
+    console.log('Grade D')}
+else if(getGrade >= 50 && getGrade <= 59){
+    console.log('Grade F')}
+    else if(getGrade < 50){
+        console.log('Failed')
+    }
+else {
+    console.log('Invalid grade')
+}
+
+//Write a for loop
+for (let i = 0; i < 500; i++){
+    console.log(i+1)
+}
