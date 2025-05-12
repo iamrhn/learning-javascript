@@ -94,4 +94,20 @@ while (condition) {
   // code block to be executed if the condition is true and the loop will continue to run until condition becomes false
 } */
 
+let f = 10;
+f = Number(f);
+let i = 0;
+while(i < f){
+    console.log(i);
+    i++;
+}
 
+/*5. Do While Loop
+Note:- The block will run first then the condition will be checked.*/
+
+let k = Number(100);
+let l = 0;
+do {
+    console.log(l);
+    l++;
+}while (l < k)

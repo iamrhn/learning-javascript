@@ -87,40 +87,59 @@
 //     console.log(formula)
 // }
 
-let stock = 'Jeans';
-if(stock === "T-shirts"){
-    console.log('T-shirts are starting from $9.99');
-} else if(stock === "Jeans"){
-    console.log('Jeans are starting from $14.99');
-}else {
-    console.log('This item is not available right now')
+// let stock = 'Jeans';
+// if(stock === "T-shirts"){
+//     console.log('T-shirts are starting from $9.99');
+// } else if(stock === "Jeans"){
+//     console.log('Jeans are starting from $14.99');
+// }else {
+//     console.log('This item is not available right now')
+// }
+
+// const fruit = 'mango';
+// switch(fruit){
+//     case 'apple':
+//         console.log('$1.00 each');
+//         break;
+//         case 'banana':
+//             console.log('$0.50 each');
+//             break;
+//             case 'orange':
+//                 console.log('$0.75 each');
+//                 break;
+//                 case 'grape':
+//                     console.log('$2.00 each');
+//                     break;
+//                     case 'mango':
+//                         console.log('$1.50 each');
+//                         break;
+//                         default:
+//                             console.log('This item is not available!')
+// }
+
+
+//For loop
+
+for (let i = 0; i < 10; i++){
+    console.log(i+1)
 }
 
-const fruit = 'mango';
-switch(fruit){
-    case 'apple':
-        console.log('$1.00 each');
-        break;
-        case 'banana':
-            console.log('$0.50 each');
-            break;
-            case 'orange':
-                console.log('$0.75 each');
-                break;
-                case 'grape':
-                    console.log('$2.00 each');
-                    break;
-                    case 'mango':
-                        console.log('$1.50 each');
-                        break;
-                        default:
-                            console.log('This item is not available!')
+//For in loop
+
+const obj = {
+    Rehan : 100,
+    Steven : 200,
+    Mick : 300,
 }
 
+for(let a in obj){
+    console.log("Marks of " + a + " are " + obj[a])
+}
 
+//For of loop
 
-
-
-
+for(let a of "Rehan"){
+    console.log(a)
+}
 
 
